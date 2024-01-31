@@ -1,0 +1,10 @@
+from django.shortcuts import render, HttpResponse
+
+
+# Create your views here.
+def home(request):
+    return render(request, 'main/home.html')
+
+
+def workers(request):
+    return render(request, 'main/workers.html')
