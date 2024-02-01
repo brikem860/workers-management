@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'workersmanagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'AVNS_xcHTgEMjclukFkbtlzT',
+        'HOST': 'pg-c3e826f-workers-management.a.aivencloud.com',
+        'PORT': '10680'
     }
 }
 
